@@ -6,7 +6,7 @@ El programa está diseñado para procesar y clasificar conjuntos de datos masivo
 
 ---
 
-## 🚀 Características Principales
+## Características Principales
 
 - **Programación de Sistemas en C:** Gestión dinámica de memoria, matrices complejas y procesamiento de archivos.
 - **Paralelización con `clone()`:** Creación de procesos ligeros a bajo nivel con pilas (`stack`) independientes y sincronización con `waitpid()`.
@@ -17,7 +17,7 @@ El programa está diseñado para procesar y clasificar conjuntos de datos masivo
 
 ---
 
-## 📁 Ficheros del Repositorio
+## Ficheros del Repositorio
 
 - `parallel.c`: Código fuente principal con la lógica de paralelización e inferencia.
 - `weights*.csv` / `biases*.csv`: Matrices de pesos y vectores de sesgos para las 4 capas de la red.
@@ -26,7 +26,7 @@ El programa está diseñado para procesar y clasificar conjuntos de datos masivo
 
 ---
 
-## ⚙️ Compilación y Ejecución
+## Compilación y Ejecución
 
 ### 📋 Requisitos Previos
 
@@ -34,7 +34,7 @@ El programa está diseñado para procesar y clasificar conjuntos de datos masivo
 - **Compilador:** `gcc` (GNU Compiler Collection).
 - **Ficheros de entrada:** Asegúrate de tener en el mismo directorio (o en la ruta especificada) los archivos `.csv` necesarios (`data.csv`, `digits.csv`, `weights*.csv` y `biases*.csv`).
 
-### ⚠️ Configuración Previa de Rutas
+### Configuración Previa de Rutas
 
 Antes de compilar, revisa la variable `my_path` en la línea 10 de `parallel.c`:
 
@@ -42,7 +42,7 @@ Antes de compilar, revisa la variable `my_path` en la línea 10 de `parallel.c`:
 char *my_path = "."; // Cambia a "." si los archivos .csv están en la misma carpeta que el ejecutable
 ```
 
-### 🛠️ Compilación
+### Compilación
 
 Abre tu terminal en el directorio del proyecto y ejecuta el siguiente comando:
 
@@ -50,7 +50,7 @@ Abre tu terminal en el directorio del proyecto y ejecuta el siguiente comando:
 gcc -o parallel parallel.c -Wall
 ```
 
-### 🚀 Ejecución
+### Ejecución
 
 El programa **requiere un parámetro obligatorio**: la cantidad de procesos paralelos en los que se dividirá el conjunto de datos de 60,000 elementos.
 
